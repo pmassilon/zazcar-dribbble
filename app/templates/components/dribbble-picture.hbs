@@ -3,7 +3,7 @@
 <div class="box">
 	<div class="box-picture">
 		{{#link-to "author.picture" dg.user.username dg.id replace=true}}
-			<img src="{{ dg.images.normal }}" class="img-responsive" />
+			<img src="{{ dg.images.normal }}" class="img-responsive" alt="{{ dg.title }}" title="{{ dg.title }}"/>
 		{{/link-to}}
 		<span class="box-link">
 			<a href={{ dg.html_url}} target="_blank"> 
@@ -29,16 +29,16 @@
 	
 	<div class="box-body">
 	
-		<h3 class="box-title" >{{ dg.title }}</h3>
+		<h3 class="box-title" title="{{ dg.user.name }}">{{ dg.user.name }}</h3>
 
 		
 	  <div class="box-author">
 	  	<div class="media">
 	  		<div class="media-left">
-			  	<img src="{{ dg.user.avatar_url }}" />  			
+			  	<img src="{{ dg.user.avatar_url }}" alt="{{ dg.user.name }}" title="{{ dg.user.name }}"/>  			
 	  		</div>
 	  		<div class="media-body">
-	  			<h4 class="media-heading text-left">
+	  			<h4 class="media-heading text-left" title="{{ dg.user.name }}">
 						{{#link-to "author" dg.user.username replace=true}}
 							{{ dg.user.name }} - {{ dg.user.username }} 	
 						{{/link-to}}
@@ -48,7 +48,7 @@
 		</div>
 	  <ul class="list-unstyled list-author text-left">
 	    <li>
-	      <a href={{ dg.html_url}} target="_blank"> 
+	      <a href={{ dg.html_url}} target="_blank" title="{{ dg.title }}"> 
 	        <i class="fa fa-dribbble"></i>
 	        {{ dg.title }}
 	      </a>

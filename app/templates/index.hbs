@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col-xs-12">
     <section id="skills">
-      <div class="row">  
-				{{#each model.pictures as |dg|}}
+      <div class="row">
+				{{#each model.pictures.data as |dg|}}
 					<div class="col-xs-12 col-sm-4">
-						{{ dribbble-pictures dg=dg }}
+						{{ dribbble-pictures dg=dg username=dg.user.username }}
           </div>
 				{{/each}}
       </div>

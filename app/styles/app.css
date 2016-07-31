@@ -46,6 +46,11 @@
 .box .box-title {
   margin: 10px auto;
 }
+.box .box-title.curt {
+  white-space: nowrap;	
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .box .box-author {
   font-size: 0.8m;
 }

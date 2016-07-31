@@ -2,11 +2,9 @@
   <div class="col-xs-12">
     <section id="skills">
       <div class="row">
-				{{#each model.pictures as |dg|}}
-					<div class="col-xs-12 col-sm-4">
-						{{ dribbble-picture dg=dg }}
-          </div>
-				{{/each}}
+				<div class="col-xs-12 col-sm-4">
+					{{ dribbble-picture dg=model.pictures.data }}
+        </div>
       </div>
     </section>
   </div>

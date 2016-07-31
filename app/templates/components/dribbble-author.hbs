@@ -4,12 +4,12 @@
   <div class="box-author">
   	<div class="media">
   		<div class="media-left">
-		  	<img src="{{ dg.avatar_url }}" />  			
+		  	<img src="{{ dg.avatar_url }}" alt="{{ dg.name }}" title="{{ dg.name }}"/>  			
   		</div>
   		<div class="media-body">
-  			<h4 class="media-heading text-left">
+  			<h4 class="media-heading text-left" title="{{ dg.name }}">
 					{{#link-to "author" dg.username replace=true}}
-						{{ dg.name }} 	
+						{{ dg.name }}
 					{{/link-to}}
 				</h4>
   		</div>
