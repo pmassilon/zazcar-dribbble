@@ -1,0 +1,31 @@
+<!-- <img src={{dribbbleUrl}}> -->
+
+<div class="box">
+	<div class="box-picture">
+		{{#link-to "author.picture" dg.user.username dg.id replace=true}}
+			<img src="{{ dg.images.normal }}" class="img-responsive" />
+		{{/link-to}}
+	<span class="box-link">
+		<a href={{ dg.html_url}} target="_blank"> 
+  		<i class="fa fa-external-link"></i>
+  	</a>
+	</span>
+	<div class="box-picture-bar">
+		<span>
+			<i class="fa fa-eye"></i>
+  		{{ dg.views_count }}
+		</span> 		
+		<span>
+			<i class="fa fa-comments"></i>
+  		{{ dg.comments_count }}
+		</span> 		
+		<span>
+			<i class="fa fa-heart"></i>
+  		{{ dg.likes_count }}
+		</span> 		
+		</div>
+	</div>
+	
+	<h3 class="box-title" >{{ dg.title }}</h3>
+</div>
+

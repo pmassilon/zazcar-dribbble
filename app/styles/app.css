@@ -1,0 +1,63 @@
+.list-author{
+	margin: 10px 0;
+}
+.list-author li{
+	padding: 3px 5px;
+	border-top: 1px solid #ccc;
+}
+
+.box {
+	margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+.box .box-body {
+	padding: 5px;
+}
+
+.box .box-picture {
+	position: relative;
+	border-radius: 5px;	
+  overflow: hidden;
+}
+.box .box-picture-bar {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding: 3px 5px;
+	background-color: #444545;
+	color: #fff;
+	text-align: right;
+}
+.box .box-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px;
+  height: 20px;  width: 20px;
+  font-size: 0.8em;
+	color: #fff;
+	background-color: #444545;
+	border-radius: 0 5px;
+}
+.box .box-link a{
+	color: #fff;
+}
+.box .box-title {
+  margin: 10px auto;
+}
+.box .box-author {
+  font-size: 0.8m;
+}
+.box .box-author .media .media-left img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;	
+  overflow: hidden;
+}
+.box .box-author .media .media-heading {
+	margin: 0;
+}
+.box .box-author .media .media-body{
+	vertical-align: middle;
+}

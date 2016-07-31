@@ -3,10 +3,16 @@ import config from './config/environment';
 
 const Router = Ember.Router.extend({
   location: config.locationType,
-  rootURL: config.rootURL
+  rootURL: config.rootURL,
+  dribbble_access_token: "442bc1e1c25c2557be4d5f6ffa4099f450c13c0fe3924a6e7631efa8106baeb8"
 });
 
 Router.map(function() {
+  this.route('index', { path: '/' });
+
+  this.route('author', { path: '/:author_id' }, function() {
+    this.route('picture', { path: '/:picture_id' });
+  });
 });
 
 export default Router;
