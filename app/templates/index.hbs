@@ -2,6 +2,7 @@
   <div class="col-xs-12">
     <section id="skills">
       <div class="row">
+        <!-- Loop shots popular -->
 				{{#each model.pictures.data as |dg|}}
 					<div class="col-xs-12 col-sm-4">
 						{{ dribbble-pictures dg=dg username=dg.user.username }}

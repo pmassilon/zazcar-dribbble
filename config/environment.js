@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'zazcar',
     environment: environment,
-    rootURL: '/dribbble/',
+    rootURL: '/dribbble/', /* Root aplication*/
     locationType: 'auto',
     EmberENV: {
       FEATURES: {

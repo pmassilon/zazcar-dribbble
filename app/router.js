@@ -8,8 +8,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  /*Router index (Shots popular)*/
   this.route('index', { path: '/' });
-
+  /*Rotas Author (perfil e shots of author) e Picture (Descrição do Shot)*/
   this.route('author', { path: '/:author_id' }, function() {
     this.route('picture', { path: '/:picture_id' });
   });
